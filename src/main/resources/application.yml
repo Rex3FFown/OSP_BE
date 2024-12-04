@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/onlineshoppingproject
+    username: postgres
+    password: deneme
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+onlineshopping:
+  app:
+    secret: onlineshopping
+  expires:
+    in: 7200000 # JWT süresi (saniye cinsinden, 7 gün)
+refresh:
+  token:
+    expires:
+      in: 3600000 # Refresh token süresi (saniye cinsinden, 1 saat)
